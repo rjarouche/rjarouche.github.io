@@ -1,0 +1,124 @@
+
+
+<!DOCTYPE html>
+<html>
+<title>Rodrigo Sartori Jarouche</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+
+<script src="js/jquery.js"></script>  
+<script src="js/jquery.waypoints.js"></script>
+<script src="js/jarouche_parallax.js"></script>
+<link rel="stylesheet" href="css/animate.css-master/animate.css"> 
+
+
+<style>
+    body, html {
+            height: 100%;
+            color: #777;
+            line-height: 1.8;
+    }
+
+    body{
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("css/img/star-2642382_1280.jpg");
+            background-size: cover;
+    }
+
+     #main{
+        min-height: 100%;
+     }
+      
+     div{
+        min-height: 500px;
+        min-width: 100%;
+        text-align: left;
+     }
+
+     span{
+         font-family: Helvetica;
+         font-size: 30px;
+         font-weight: bold;
+         width: 100%;
+         background-color: white;
+         position: relative;
+         top : -30px;  
+         left: 30px;
+         border: 2px solid black;
+     }
+
+
+     header section#name{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        -ms-transform:translate(-50%,-50%);
+        background-color: #DDDDDD;
+
+     }
+
+     section h1{
+         font-size: 50px
+     }
+    
+</style>    
+
+
+<script>
+        $(function(){
+                var cells = document.getElementsByTagName('div'),
+                colors = ['#7FDBFF','#39CCCC','#3D9970','#2ECC40','#01FF70','#FFDC00','#FF851B','#FF4136','#F012BE','#B10DC9','#DDDDDD','#0074D9','#001f3f','#111111'];
+                idx = 999999;
+                ant = 999999;
+                for(var i = 0; i < cells.length; i++) {
+                    
+                    while(ant == idx){
+                        idx = Math.floor(Math.random() * colors.length);
+                    }
+                    ant = idx
+                    cells[i].style.backgroundColor = colors[idx];
+                    cells[i].innerHTML = cells[i].innerHTML + '<br/><textarea rows="3" cols="80"><div class="' + cells[i].className +'"><div></textarea>'; 
+                    cells[i].innerHTML = cells[i].innerHTML + '<br/><h3>Or</h3><br/><textarea rows="3" cols="80">$(selector).addAnimation("'+cells[i].className.substr(4)+'") </textarea>'; 
+                }
+
+                cells = document.getElementsByTagName('span'),
+                idx = 999999;
+                ant = 999999;
+                for(var i = 0; i < cells.length; i++) {
+                    
+                    while(ant == idx){
+                        idx = Math.floor(Math.random() * colors.length);
+                    }
+                    ant = idx
+                    cells[i].style.color = colors[idx];
+                    cells[i].style.borderColor = colors[idx];
+                }
+
+
+                jParallax.start();
+    });
+</script>    
+
+</head>
+
+<body>
+<header id="main" style="text-align:center">
+    <section id="name">
+        <h1>Jarouche Parallax</h1>
+        <h2>Just put a jParallax.start(); and see the magic!</h2>
+        OR
+        <h2>Use $(selector).addAnimation(Animation Name) </h2>
+        Download e more detailed information <a href="#">here</a>
+    </section>
+
+</header>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<div class="jar_bounce" ><span>bounce</span></div><div class="jar_flash" ><span>flash</span></div><div class="jar_pulse" ><span>pulse</span></div><div class="jar_rubberBand" ><span>rubberBand</span></div><div class="jar_shake" ><span>shake</span></div><div class="jar_swing" ><span>swing</span></div><div class="jar_tada" ><span>tada</span></div><div class="jar_wobble" ><span>wobble</span></div><div class="jar_jello" ><span>jello</span></div><div class="jar_flip" ><span>flip</span></div><div class="jar_hinge" ><span>hinge</span></div><div class="jar_jackInTheBox" ><span>jackInTheBox</span></div><div class="jar_bounceIn" ><span>bounceIn</span></div><div class="jar_bounceOut" ><span>bounceOut</span></div><div class="jar_bounceInDown" ><span>bounceInDown</span></div><div class="jar_bounceOutUp" ><span>bounceOutUp</span></div><div class="jar_bounceInLeft" ><span>bounceInLeft</span></div><div class="jar_bounceOutRight" ><span>bounceOutRight</span></div><div class="jar_bounceInRight" ><span>bounceInRight</span></div><div class="jar_bounceOutLeft" ><span>bounceOutLeft</span></div><div class="jar_bounceInUp" ><span>bounceInUp</span></div><div class="jar_bounceOutDown" ><span>bounceOutDown</span></div><div class="jar_fadeIn" ><span>fadeIn</span></div><div class="jar_fadeOut" ><span>fadeOut</span></div><div class="jar_fadeInDown" ><span>fadeInDown</span></div><div class="jar_fadeOutUp" ><span>fadeOutUp</span></div><div class="jar_fadeInDownBig" ><span>fadeInDownBig</span></div><div class="jar_fadeOutUpBig" ><span>fadeOutUpBig</span></div><div class="jar_fadeInLeft" ><span>fadeInLeft</span></div><div class="jar_fadeOutRight" ><span>fadeOutRight</span></div><div class="jar_fadeInLeftBig" ><span>fadeInLeftBig</span></div><div class="jar_fadeOutRightBig" ><span>fadeOutRightBig</span></div><div class="jar_fadeInRight" ><span>fadeInRight</span></div><div class="jar_fadeOutLeft" ><span>fadeOutLeft</span></div><div class="jar_fadeInRightBig" ><span>fadeInRightBig</span></div><div class="jar_fadeOutLeftBig" ><span>fadeOutLeftBig</span></div><div class="jar_fadeInUp" ><span>fadeInUp</span></div><div class="jar_fadeOutUp" ><span>fadeOutUp</span></div><div class="jar_fadeInUpBig" ><span>fadeInUpBig</span></div><div class="jar_fadeOutDownBig" ><span>fadeOutDownBig</span></div><div class="jar_flipInX" ><span>flipInX</span></div><div class="jar_flipOutY" ><span>flipOutY</span></div><div class="jar_flipInY" ><span>flipInY</span></div><div class="jar_flipOutX" ><span>flipOutX</span></div><div class="jar_lightSpeedIn" ><span>lightSpeedIn</span></div><div class="jar_lightSpeedOut" ><span>lightSpeedOut</span></div><div class="jar_rotateIn" ><span>rotateIn</span></div><div class="jar_rotateOut" ><span>rotateOut</span></div><div class="jar_rotateInDownLeft" ><span>rotateInDownLeft</span></div><div class="jar_rotateOutDownLeft" ><span>rotateOutDownLeft</span></div><div class="jar_rotateInDownRight" ><span>rotateInDownRight</span></div><div class="jar_rotateOutDownRight" ><span>rotateOutDownRight</span></div><div class="jar_rotateInUpLeft" ><span>rotateInUpLeft</span></div><div class="jar_rotateOutUpLeft" ><span>rotateOutUpLeft</span></div><div class="jar_rotateInUpRight" ><span>rotateInUpRight</span></div><div class="jar_rotateOutUpRight" ><span>rotateOutUpRight</span></div><div class="jar_slideInUp" ><span>slideInUp</span></div><div class="jar_slideOutDown" ><span>slideOutDown</span></div><div class="jar_slideInDown" ><span>slideInDown</span></div><div class="jar_slideOutUp" ><span>slideOutUp</span></div><div class="jar_slideInLeft" ><span>slideInLeft</span></div><div class="jar_slideOutRight" ><span>slideOutRight</span></div><div class="jar_slideInRight" ><span>slideInRight</span></div><div class="jar_slideOutLeft" ><span>slideOutLeft</span></div><div class="jar_zoomIn" ><span>zoomIn</span></div><div class="jar_zoomOut" ><span>zoomOut</span></div><div class="jar_zoomInDown" ><span>zoomInDown</span></div><div class="jar_zoomOutUp" ><span>zoomOutUp</span></div><div class="jar_zoomInLeft" ><span>zoomInLeft</span></div><div class="jar_zoomOutRight" ><span>zoomOutRight</span></div><div class="jar_zoomInRight" ><span>zoomInRight</span></div><div class="jar_zoomOutLeft" ><span>zoomOutLeft</span></div><div class="jar_zoomInUp" ><span>zoomInUp</span></div><div class="jar_zoomOutUp" ><span>zoomOutUp</span></div><div class="jar_rollIn" ><span>rollIn</span></div><div class="jar_rollOut" ><span>rollOut</span></div>
+
+</body>
+</html>

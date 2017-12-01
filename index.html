@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<title>Rodrigo Sartori Jarouche</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+
+<link rel="stylesheet" href="css/w3/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+<script src="js/jquery.js"></script>
+  
+<script src="js/jquery.waypoints.js"></script>
+<script src="js/jarouche_parallax.js"></script>
+<script src="js/js.js"></script>
+  
+<link rel="stylesheet" href="css/animate.css-master/animate.css">
+<link rel="stylesheet" href="css/lay.css"> 
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-text-white" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> SOBRE</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJETOS</a>
+    <a href="#quotes" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-thumbs-o-up"></i> DEPOIMENTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTATO</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-teal w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">SOBRE</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJETOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTATO</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-container  w3-padding-64" id="home">
+  <div class="w3-display-middle">
+    <span style="width:100%;text-align:center">
+         <img  style="width: 100%;height: auto;" src="css/img/logo.png" alt="Logo feito por mim!"></img>
+    </span>
+    <br><br>
+      <div style="width:100%;text-align:center">
+     <span class="w3-center w3-text-black" style="text-align:center">
+              <a href="https://github.com/rjarouche" target="_blank"><i class="fa fa-github w3-xxlarge" title="GitHub"></i></a>        
+     </span>
+     &nbsp;&nbsp;&nbsp;&nbsp;
+     <span class="w3-center w3-text-blue" style="text-align:center">
+             <a href="https://www.linkedin.com/in/rjarouche/" target="_blank"><i class="fa fa-linkedin-square w3-xxlarge" title="LinkedIn"></i></a>        
+     </span>     
+     &nbsp;&nbsp;&nbsp;&nbsp;
+     <span class="w3-center w3-text-orange" style="text-align:center">
+              <a href="https://pt.stackoverflow.com/users/45900/rodrigo-sartori-jarouche?tab=profile" target="_blank"><i class="fa fa-stack-overflow w3-xxlarge" title="Stackoverflow"></i></a>        
+     </span>           
+     &nbsp;&nbsp;&nbsp;&nbsp;
+     <span class="w3-center w3-text-black" style="text-align:center">
+              <a href="http://rodrigojarouche.blogspot.com.br/" target="_blank"><i class="fa fa-wordpress w3-xxlarge" title="Blog"></i></a>        
+     </span>        
+     <!--
+      &nbsp;&nbsp;&nbsp;&nbsp;
+     <span class="w3-center w3-text-red" style="text-align:center">
+              <a href="#" target="_blank"><i class="fa fa-rebel w3-xxlarge" title="Currículo"></i></a>        
+     </span>     
+      -->
+     
+     </div>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center w3-text-teal jar_fadeIn">Sobre mim</h3>
+  <p class="w3-center jar_slideInRight"><em>Eu adoro os resultados que minhas soluções dão! Um típico  </em><a href="https://www.16personalities.com/br/personalidade-intj" target="_blank" class="w3-teal" >INTJ<a/></p>
+  <p class="jar_slideInLeft">Com mais de 10 anos de atuação na área de TI, desenvolveu mais de 30 projetos de sistemas web, a maior parte deles sistemas privados e corporativos. Vendo a necessidade do mercado, e do atual momento brasileiro, que demanda criatividade 
+, empreendedorismo e resultados concretos, resolveu em 2017 oferecer serviços de consultoria a valores acessíveis, para que empresas, mesmo que pequenas, possam vislumbrar expandir seus negócios e oferta de produtos através de sistemas web.
+ Com amplitude de conhecimentos em vários ramos de negócio é capaz de propor soluções que agreguem valor real ao negócio.</p>
+  <div class="w3-row" id="aboutRow1">
+    <div class="w3-col m6 w3-center w3-padding-large w3-text-teal jar_slideInRight">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Rodrigo S. Jarouche</b></p>
+      <img src="css/img/eu.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Este sou eu" width="300">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-padding-large jar_slideInLeft">
+      <p>Dedicado ,autodidata, adaptável, dinâmico e independente é capaz, quando necessário, compreender em detalhes os impactos de suas ações nos mais diversos níveis das instituições em que atua. 
+É criativo, capaz de resolver problemas complexos (alias, tem paixão por isso), ótimo planejador , comunicando-se de forma direta e assertiva possuí bom relacionamento interpessoal em todos os níveis focado nos resultados, é um apaixonado pelo constante autodesenvolvimento, trabalhando bem tanto individualmente quanto em grupo.
+Preocupado e inquisitivo com o mundo ao redor, preocupa-se com questões comunitárias, sendo membro/voluntário de comissões do bairro onde mora, afim de melhorar a vida daqueles que o cerca.</p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16 w3-text-teal jar_fadeIn">Meus pontos fortes</p>
+  
+  
+  
+  <p class="w3-wide w3-text-teal jar_fadeIn" ><i class="fa fa-cubes"></i>Resolução de problemas complexos</p>
+  <div class="w3-grey jar_fadeInRight">
+    <div class="w3-container w3-padding-small w3-teal w3-center jar_slideInLeft" style="width:90%">90%</div>
+  </div>
+  
+    <p class="w3-wide w3-text-teal jar_fadeIn" ><i class="fa fa-gears"></i>Programação</p>
+  <div class="w3-grey jar_fadeInRight">
+    <div class="w3-container w3-padding-small w3-teal w3-center jar_slideInLeft" style="width:85%">85%</div>
+  </div>
+  
+  <p class="w3-wide w3-text-teal jar_fadeIn"><i class="fa fa-globe"></i>Entendimento de necessidade do negócio</p>
+  <div class="w3-grey jar_slideInRight">
+    <div class="w3-container w3-padding-small w3-teal w3-center jar_slideInLeft" style="width:80%">80%</div>
+  </div>
+  
+  <p class="w3-wide w3-text-teal jar_fadeIn"><i class="fa fa-group"></i>Relacionamento Interpessoal</p>
+  <div class="w3-grey jar_fadeInRight">
+    <div class="w3-container w3-padding-small w3-teal w3-center jar_slideInLeft" style="width:80%">80%</div>
+  </div>
+  
+  <p class="w3-wide w3-text-teal jar_fadeIn"><i class="fa fa-code"></i>Design e Usabilidade</p>
+  <div class="w3-grey jar_fadeInRight">
+    <div class="w3-container w3-padding-small w3-teal w3-center jar_slideInLeft" style="width:75%">75%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-teal w3-padding-16 jar_fadeIn">
+  
+ <div class="w3-quarter w3-section jar_zoomInRight">
+    <span class="w3-xlarge">Resultados+</span><br>
+    <span class="w3-small">Foco em resultados garante o atendimento das necessidades do projeto, evitando perda de tempo e dinheiro</span><br> 
+ </div>
+  
+  
+  <div class="w3-quarter w3-section jar_zoomInRight">
+    <span class="w3-xlarge">30+</span><br>
+    Projetos
+  </div>
+
+    <div class="w3-quarter w3-section jar_zoomInLeft">
+    <span class="w3-xlarge">10+</span><br>
+        Experiência
+  </div>
+
+  <div class="w3-quarter w3-section jar_zoomInLeft">
+    <span class="w3-xlarge">Entendimento do negócio+</span><br>
+    <span class="w3-small">Compreender rapidamente as necessidades do negócios leva a propostas criativas que trazem resultados imediatos e a longo prazo</span><br> 
+  </div>
+</div>  
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-teal w3-wide">Projetos</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center  w3-text-teal jar_fadeIn">Meu Trabalho</h3>
+  <p class="w3-center  w3-text-teal jar_fadeIn"><em>Resumo dos meus trabalhos<br> Clique nas imagens para aumentar</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3 jar_rotateInDownLeft">
+      <img src="css/img/cn.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sistema CNDISO para previdencia social em contrução civil http://www.cndiso.com.br">
+    </div>
+
+    <div class="w3-col m3 jar_rotateInDownLeft">
+      <img src="css/img/ja.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Edição e atualização do blog e canal de games Joga Aew">
+    </div>
+
+    <div class="w3-col m3 jar_rotateInDownRight">
+      <img src="css/img/en.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Encurtador de url personalizavel por domínio">
+    </div>
+
+    <div class="w3-col m3 jar_rotateInDownRight">
+      <img src="css/img/fc.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="App para facebbok , Brazil Flag">
+    </div>
+  </div>
+  
+  
+  <div class="w3-row-padding w3-center">
+
+    <div class="w3-col m3">
+    </div>
+
+
+    <div class="w3-col m3  jar_rotateInUpLeft">
+      <img src="css/img/vc.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Biblioteca php para acesso ao serviço dos correios via CEP">
+    </div>
+
+    <div class="w3-col m3 jar_rotateInUpRight">
+      <img src="css/img/para.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Projeto Open Source de frontEnd, utilizado inclusive por este site https://rjarouche.github.io/Jparallax/">
+    </div>
+
+    <div class="w3-col m3 jar_rotateInUpRight">
+      <img src="css/img/exp.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="10+ anos de experiência em projetos corporativos">
+    </div>
+
+
+    
+    <div class="w3-col m3">
+    </div>
+    </div>
+</div>
+
+
+<!-- Second Parallax Image with quote Text -->
+<div class="bgimg-5 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-teal w3-wide">Depoimentos</span>
+  </div>
+</div>
+
+<!-- Container (QuotesSection) -->
+<div class="w3-content w3-container w3-padding-64" id="quotes">
+  <h3 class="w3-center w3-text-teal jar_fadeIn">Depoimentos</h3>
+  <p class="w3-center w3-text-teal jar_fadeIn"><em>Profissionais que gostam do meu trabalho!</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+
+  <div class="w3-row-padding w3-left w3-text-gray">
+    <div class="w3-col m12 jar_slideInRight">
+      <em>Excelênte Profissional!
+      Rodrigo prestou-nos serviços para a implementação de uma versão Free do sistema CNDISO( sistema de auxilio previdenciário na área de construção civil), e as entregas são sempre corretas e rápidas.
+      Ele também tem um bom trato com usuários e entendimento de negócios. Recomendado!<em> <br/>
+      <b>Iracu Morikawa</b>, dono da empresa Tensai Serviços Assessoria Previdenciária em Construição Cívil
+ </div>
+</div>
+<br>   <br>   <br>   <br>   <br>
+
+
+   <div class="w3-row-padding w3-left w3-text-gray">
+       <div class="w3-col m12 jar_slideInLeft">
+        <em>"Ótimo profissional, dedicado, organizado e aberto à discussões. Teve participação ativa no desenvolvimento de TMS próprio quando trabalhávamos em empresas distintas mas do mesmo grupo. Altamente recomendado!"</em> <br>
+<b>Celso Costa</b>,Information Technology & Key Accounts Manager na Motoliner Amazonas Ltda
+    </div>
+   </div>
+ 
+   <br>   <br>   <br>   <br>   <br>
+  <div class="w3-row-padding w3-left w3-text-gray">   
+        <div class="w3-col m12 jar_slideInRight">
+        <em>"Rodrigo Sartori is a professional partner and an amazing programmer guy. I had the opportunity to work with him in Bem Group shortly, perhaps for almost 10 months, even though we were in different teams. He has a great knowledge about many different programming languages such as PHP and databases Oracle (including PL / SQL), Informix, MySQL, SQLServer 2000/2005 and PostgreSQL. Besides this, he is a reliable and kind person, clever and devoted professional. I recommend him to join any team or company."</em> <br>
+<b>Sandro Melo</b>, Especialista em Cybersecurity e autor do livro  <em><a href="http://www.altabooks.com.br/exploracao-de-vulnerabilidades-em-redes-tcp-ip-3a-edicao-revisada-e-ampliada.html" target="_blank">Exploração de Vulnerabilidades em Redes TCP IP</a></em>
+    </div>
+    
+</div>
+</div>
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-teal w3-wide">Contato</span>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center jar_fadeIn">Eu trabalho de, para e com a INTERNET</h3>
+  <p class="w3-center jar_fadeIn"><em>Estou esperando seu retorno!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom  jar_fadeIn">
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: rjarouche@gmail.com<br>
+      </div>
+      <p class="jar_fadeIn">Convide-me para uma xícara de<i class="fa fa-coffee"></i> (brincadeira ,na verdade não gosto de café :D) , ou deixe-me um recado:</p>
+      
+      <form class=" jar_fadeIn" action="https://formspree.io/rjarouche@gmail.com" method="POST" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Nome">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="email">
+          </div>
+          </div>
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Telefone" name="Telefone">
+          </div>
+          </div>
+        
+        <textarea class="w3-input w3-border" type="text" placeholder="Menssagem" required name="Message"></textarea>
+        <button class="w3-button w3-teal w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> Mandar mensagem
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-teal w3-padding-64">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-green">w3.css</a></p>
+   Rodrigo Sartori Jarouche @ 2017
+         <div style="width:100%;text-align:center">
+     <span class="w3-center w3-text-black" style="text-align:center">
+              <a href="https://github.com/rjarouche" target="_blank"><i class="fa fa-github w3-large" title="GitHub"></i></a>        
+     </span>
+     &nbsp;&nbsp;&nbsp;&nbsp;
+     <span class="w3-center w3-text-blue" style="text-align:center">
+             <a href="https://www.linkedin.com/in/rjarouche/" target="_blank"><i class="fa fa-linkedin-square w3-large" title="LinkedIn"></i></a>        
+     </span>     
+     &nbsp;&nbsp;&nbsp;&nbsp;
+     <span class="w3-center w3-text-orange" style="text-align:center">
+              <a href="https://pt.stackoverflow.com/users/45900/rodrigo-sartori-jarouche?tab=profile" target="_blank"><i class="fa fa-stack-overflow w3-large" title="Stackoverflow"></i></a>        
+     </span>           
+     &nbsp;&nbsp;&nbsp;&nbsp;
+     <span class="w3-center w3-text-black" style="text-align:center">
+              <a href="http://rodrigojarouche.blogspot.com.br/" target="_blank"><i class="fa fa-wordpress w3-large" title="Blog"></i></a>        
+     </span>        
+     <!--
+      &nbsp;&nbsp;&nbsp;&nbsp;
+     <span class="w3-center w3-text-red" style="text-align:center">
+              <a href="#" target="_blank"><i class="fa fa-rebel w3-xxlarge" title="Currículo"></i></a>        
+     </span>     
+      -->
+     
+     </div>
+</footer>
+ 
+
+<!--
+  For parallax issue on IE and edge
+-->
+<script>
+if(navigator.userAgent.match(/Trident\/7\./) || navigator.userAgent.indexOf('Edge') >= 0) {
+  document.body.addEventListener("mousewheel", function() {
+    event.preventDefault();
+    var wd = event.wheelDelta;
+    var csp = window.pageYOffset;
+    window.scrollTo(0, csp - wd);
+  });
+}
+</script> 
+
+
+</body>
+</html>
