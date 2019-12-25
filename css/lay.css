@@ -1,9 +1,11 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Roboto', sans-serif;}
 body, html {
     height: 100%;
     color: #777;
     line-height: 1.8;
 }
+
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 , .bgimg-5 {
@@ -46,9 +48,9 @@ body, html {
     .bgimg-1, .bgimg-2, .bgimg-3,.bgimg-5 {
         background-attachment: scroll;
     }
-    
+
     #divlogo{
        display:none;
     }
-    
+
 }
