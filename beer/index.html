@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I wish you're a Beer then I could drink you all!</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.2/axios.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="idtext"></p>
+        </div>
+
+    </div>
+    <div id="wrapper">
+        <header></header>
+        <content id="app">
+            <div v-for="(beer,index) in beers"  v-on:click="displayAtt($event,index)" class="div-container">
+                <div v-bind:style='{ backgroundImage: "url(" + beer.img + ")", }' class="div-text">
+                    <h2>${ beer.name}</h2> <br/> <h5>${beer.shortDescription}</h5>
+                </div>
+                <span class="div-superior" v-bind:style="{ 'background-color': index % 2 === 0 ? '#370617' : '#ffba08' }"></span>
+
+            </div>
+
+        </content>
+    </div>
+
+
+
+</body>
+</html>

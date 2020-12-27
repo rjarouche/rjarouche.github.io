@@ -1,0 +1,10 @@
+[
+    {
+      "id": 1,
+      "name": "Eisenbahn",
+      "shortDescription": "Cerveja de pouco amargor e com gosto forte do puro Malte.",
+      "longDescription": "Cerveja de pouco amargor e com gosto forte do puro Malte.<br> Uma cerveja que é indicada para acompanhar peixes e ser degustada na temperatura de 3°C a 4°C <br> Bastante leve e refrescante na minha opinião",
+      "img": "./css/img/1.jpg",
+      "imgInside": "./css/img/1.jpg"
+    }
+  ]
