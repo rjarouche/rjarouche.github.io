@@ -1,10 +1,14 @@
 document.addEventListener('DOMContentLoaded',function(){
+
+
     Vue.prototype.$http = axios;
+    Vue.prototype.$Ebc2Hex = new Ebc2Hex;
     new Vue({
-        el: '#app',
+        el: '#wrapper',
         delimiters: ['${' , '}'],
         data: {
         beers: [],
+        modalBeer: []
         },
         created() {
         var vm = this
@@ -15,9 +19,25 @@ document.addEventListener('DOMContentLoaded',function(){
             })
         },
         methods: {
-            displayAtt: function(event,index){
+            displayAtt: function(event,index,beer){
+                this.modalBeer = beer;
 
-                document.getElementById("idtext").innerHTML = "<h1>"+this.beers[index].name+"</h1>" + "<img class='img-modal' src='" + this.beers[index].imgInside + "'>" +this.beers[index].longDescription
+                if(this.modalBeer.EBC){
+                  this.modalBeer.hex = this.$Ebc2Hex.convert(this.modalBeer.EBC,1);
+                }
+
+                var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
+                if(width > 768){
+                  this.modalBeer.perc = (100 / this.modalBeer.imgInside.length) - 1;
+                }else{
+                  this.modalBeer.perc = 100;
+                }
+
+
+
+
+                //document.getElementById("idtext").innerHTML = "<h1>"+this.beers[index].name+"</h1>" + "<img class='img-modal' src='" + this.beers[index].imgInside + "'>" +this.beers[index].longDescription
                 document.getElementById("myModal").style.display = "block";
             }
         }

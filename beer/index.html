@@ -8,26 +8,37 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.2/axios.js"></script>
+    <script type="text/javascript" src="js/ebc2hexjs.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
 </head>
-<body>
-    <div id="myModal" class="modal">
+<body >
 
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <p id="idtext"></p>
-        </div>
 
-    </div>
     <div id="wrapper">
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h1>${ modalBeer.name } </h1>
+              <span>IBU - International Bitterness Unitis, escala de amargor (10 - Fraco, 35 - Médio, 60 ou mais - Forte): ${ modalBeer.IBU }</span> <br />
+              <div v-if="modalBeer.EBC" v-bind:style="{backgroundColor: modalBeer.hex, color: 'white'}"><span v-if="modalBeer.EBC"><b>EBC (Escala de cor): ${ modalBeer.EBC }</b></span><br><br></div>
+              <span v-else>EBC - Escala de cor (0 - Mais clara, 80 mais escura): Sem info :(</span>
+
+              <br /> <br />
+              <img class='img-modal' v-for="imagem in modalBeer.imgInside" v-bind:src="imagem" v-bind:style="{width: modalBeer.perc + '%'}" />
+              <br><br>
+              <span v-html="modalBeer.longDescription"></span>
+            </div>
+
+        </div>
         <header></header>
-        <content id="app">
-            <div v-for="(beer,index) in beers"  v-on:click="displayAtt($event,index)" class="div-container">
+        <content>
+            <div v-for="(beer,index) in beers"  v-on:click="displayAtt($event,index,beer)" class="div-container">
                 <div v-bind:style='{ backgroundImage: "url(" + beer.img + ")", }' class="div-text">
                     <h2>${ beer.name}</h2> <br/> <h5>${beer.shortDescription}</h5>
                 </div>
-                <span class="div-superior" v-bind:style="{ 'background-color': index % 2 === 0 ? '#370617' : '#ffba08' }"></span>
+                <span class="div-superior" v-bind:style="{ 'background-color': index % 2 === 0 ? '#EEE765' : '#5A1B17' }"></span>
 
             </div>
 

@@ -2,9 +2,32 @@
     {
       "id": 1,
       "name": "Eisenbahn",
-      "shortDescription": "Cerveja de pouco amargor e com gosto forte do puro Malte.",
+      "shortDescription": "Pilsen. Puro Malte. Clara. Amargor leve",
       "longDescription": "Cerveja de pouco amargor e com gosto forte do puro Malte.<br> Uma cerveja que é indicada para acompanhar peixes e ser degustada na temperatura de 3°C a 4°C <br> Bastante leve e refrescante na minha opinião",
+      "IBU" : 11,
+      "EBC" : 10,
       "img": "./css/img/1.jpg",
-      "imgInside": "./css/img/1.jpg"
+      "imgInside": ["./css/img/1.jpg"]
+    },
+    {
+      "id": 2,
+      "name": "Eisenbahn",
+      "shortDescription": "American IPA. Puro Malte. Escura. Amarga e Frutada",
+      "longDescription": "Nunca pesnei que pudesse desfrutar de uma cerveja de Alto-Aramargor.Ledo engano. Está American IPA cai muito bem com carne como é indicada, já que a especiência de saborear a cerveja com o churrasco deu um novo tipo de degustação. Ainda vou provar ela com hamburger. Indicada para ser servida de 5ºa 7º",
+      "IBU" : 50,
+      "EBC" : 26,
+      "img": "./css/img/2.jpg",
+      "imgInside": ["./css/img/2.jpg","./css/img/2.jpg"]
+    },
+
+    {
+      "id": 3,
+      "name": "Colorado",
+      "shortDescription": "Cerveja nacional Ribeirão LARGER, clara, com aroma de Laranja",
+      "longDescription": "Cerva nacional, muito refrescante com um leve aroma de laranja. Boa para um dia de muito calor, normalmente se aprecia com carne Branca mas para mim vai bem em qualquer lugar",
+      "IBU" : 20,
+      "EBC" : 8.5,
+      "img": "./css/img/3.jpg",
+      "imgInside": ["./css/img/3.jpg"]
     }
   ]

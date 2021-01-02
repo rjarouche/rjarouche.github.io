@@ -1,11 +1,11 @@
 body{
-    background-color: #03071e;
+    background-color: #020A0C;
     color: #03071e;
 }
 
 h2,h5{
-    background-color: #370617;
-    color:floralwhite;
+    background-color: #003049;
+    color:#eae2b7;
 }
 
 #wrapper{
@@ -57,18 +57,24 @@ content{
 }
 
 
-#app span:nth-child(2){
-    background-color:  #6a040f;
+#app span:nth-child(even){
+    background-color:  #FD0C06;
 
 }
-#appspan:nth-child(1){
-    background-color:  #f48c06;
+#app span:nth-child(odd){
+    background-color:  #FCB204;
 }
 
 .div-superior:hover{
 
     cursor:pointer;
     opacity: 0;
+}
+
+.img-modal{
+    width:19%;
+    margin-right: 5px;
+    display:inline-block;
 }
 
 
@@ -104,14 +110,17 @@ content{
     }
 
 
+    .img-modal{
+        width:100%;
+        display:block;
+        margin-bottom: 5px;
+    }
+
 
 }
 
 
-.img-modal{
-    width:100%;
-    margin: auto;
-}
+
 
 /*MODAL*/
     /* The Modal (background) */
