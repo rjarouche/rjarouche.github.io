@@ -17,7 +17,7 @@
       "IBU" : 50,
       "EBC" : 26,
       "img": "./css/img/2.jpg",
-      "imgInside": ["./css/img/2.jpg","./css/img/2.jpg"]
+      "imgInside": ["./css/img/2.jpg"]
     },
 
     {

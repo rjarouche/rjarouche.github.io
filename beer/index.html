@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I wish you're a Beer then I could drink you all!</title>
+    <link rel="shortcut icon" href="css/img/fav.png" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -22,9 +23,8 @@
               <span class="close">&times;</span>
               <h1>${ modalBeer.name } </h1>
               <span>IBU - International Bitterness Unitis, escala de amargor (10 - Fraco, 35 - Médio, 60 ou mais - Forte): ${ modalBeer.IBU }</span> <br />
-              <div v-if="modalBeer.EBC" v-bind:style="{backgroundColor: modalBeer.hex, color: 'white'}"><span v-if="modalBeer.EBC"><b>EBC (Escala de cor): ${ modalBeer.EBC }</b></span><br><br></div>
+              <div v-if="modalBeer.EBC" v-bind:style="{backgroundColor: modalBeer.hex, color: 'black'}" class="div-beer"><span v-if="modalBeer.EBC"><b>EBC (Escala de cor): ${ modalBeer.EBC }</b></span><br><br><img src="css/img/taca.png"/></div>
               <span v-else>EBC - Escala de cor (0 - Mais clara, 80 mais escura): Sem info :(</span>
-
               <br /> <br />
               <img class='img-modal' v-for="imagem in modalBeer.imgInside" v-bind:src="imagem" v-bind:style="{width: modalBeer.perc + '%'}" />
               <br><br>

@@ -23,13 +23,13 @@ document.addEventListener('DOMContentLoaded',function(){
                 this.modalBeer = beer;
 
                 if(this.modalBeer.EBC){
-                  this.modalBeer.hex = this.$Ebc2Hex.convert(this.modalBeer.EBC,1);
+                  this.modalBeer.hex = this.$Ebc2Hex.convert(this.modalBeer.EBC,0.7);
                 }
 
                 var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
                 if(width > 768){
-                  this.modalBeer.perc = (100 / this.modalBeer.imgInside.length) - 1;
+                  this.modalBeer.perc = this.modalBeer.imgInside.length <= 5 ? (100 / this.modalBeer.imgInside.length) - 1 : 19;
                 }else{
                   this.modalBeer.perc = 100;
                 }

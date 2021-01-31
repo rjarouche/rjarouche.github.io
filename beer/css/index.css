@@ -77,6 +77,16 @@ content{
     display:inline-block;
 }
 
+.div-beer{
+    display: block;
+    width: 25%;
+}
+
+.div-beer img{
+    width:100%;
+    margin-bottom: -5px;
+}
+
 
 
 
@@ -114,6 +124,11 @@ content{
         width:100%;
         display:block;
         margin-bottom: 5px;
+    }
+
+    .div-beer{
+        display: block;
+        width: 100%;
     }
 
 
