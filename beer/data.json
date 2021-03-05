@@ -29,5 +29,16 @@
       "EBC" : 8.5,
       "img": "./css/img/3.jpg",
       "imgInside": ["./css/img/3.jpg"]
+    },
+    
+        {
+      "id": 4,
+      "name": "Baden Baden Witbier",
+      "shortDescription": "Baden Baden Witbier cerveja de trigo, coentro e laranja.",
+      "longDescription": "Cervinha daquelas levinhas e cítricas.Do jeito que eu gosto. Deixa um gostinho bom de laranja no fim de cada golada",
+      "IBU" : 11,
+      "EBC" : 6,
+      "img": "./css/img/4.jpg",
+      "imgInside": ["./css/img/4.jpg"]
     }
   ]
