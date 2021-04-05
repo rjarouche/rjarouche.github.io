@@ -40,5 +40,15 @@
       "EBC" : 6,
       "img": "./css/img/4.jpeg",
       "imgInside": ["./css/img/4.jpeg"]
+    },
+     {
+      "id": 5,
+      "name": "Baden Baden Cristal",
+      "shortDescription": "Baden Baden Cristal",
+      "longDescription": "Pilsen da Baden Baden, muito boa tem um gosto ótimo.Genériquinha que faz uma pressão para não tomar as mais conhecidas ",
+      "IBU" : 9,
+      "EBC" : 6,
+      "img": "./css/img/4.jpeg",
+      "imgInside": ["./css/img/5.jpeg"]
     }
   ]
